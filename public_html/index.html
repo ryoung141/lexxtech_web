@@ -8,15 +8,24 @@
     <meta name="keywords" content="car, cars, automotive, repair, mechanic, shop, lancaster, CA, willy, AVLexxTech, AV, Lexx, Tech, lexus, toyota">
     <meta name="author" content="Richard Young">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDRo2JnoTMYy94wCqzm-o3GpKqySEeZyM&callback=initMap" type="text/javascript"></script>
     
 </head>
 <body>
-   <ul id="nav_container">
-       <li><a href="#service_landing">Services</a></li>
-       <li><a href="#about_us_landing">About Us</a></li>
-       <li><a href="#hours_landing">Hours</a></li>
-       <li><a href="#contact_landing">Contact</a></li>
-   </ul>
+    <div id="navWrap">
+	<div id="nav">
+	    <ul id="nav_container">
+		<li><a href="#logo_top">Home</a></li>
+		<li><a href="#service_landing">Services</a></li>
+		<li><a href="#about_us_landing">About Us</a></li>
+		<li><a href="#hours_landing">Hours</a></li>
+		<li><a href="#contact_landing">Contact</a></li>
+	    </ul>
+	</div>
+    </div>
    <div id="logo_top">
        <img id="logo" src="/img/logo_520x160_new_colors.png" width="550" height="160">
    </div>
@@ -104,10 +113,6 @@
 	    </ul>
 	    <h2>Location</h2>
 	    <div id="contact_map"></div>
-	    <script type="text/javascript" src="/js/map.js"></script>
-	    <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDRo2JnoTMYy94wCqzm-o3GpKqySEeZyM&callback=initMap" type="text/javascript"></script>
-
     </div>
     <footer>
 	<ul id="footer_info">

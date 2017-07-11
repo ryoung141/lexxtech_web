@@ -191,7 +191,7 @@ body {
 }
 
 /*logo*/
-#logo {background-color:#EDF2f4; padding:15px; border:5px solid #000; display:block;}
+#logo {background-color:#EDF2f4; padding:15px; border:5px solid #000; height:auto;width:auto;max-width:100%;margin:auto}
 #logo_top {background-image:url("http://www.donsgarageocala.com/wp-content/uploads/dons-garage-in-ocala-slider-6.jpg"); background-size:cover; padding:40px; height:auto; width:auto;}
 
 /* ANCHORS */
@@ -199,8 +199,12 @@ a, a:visited {text-decoration: none; }
 a:hover {text-decoration: underline;}
 
 /* NAVBAR */
-ul#nav_container li{display:inline; float:left; position:fixed; top:0; width:100%; }
-ul#nav_container li a{display: block; text-align: center;  }
+#navWrap{height:47px;}
+#nav{padding:0;border-top:2px solid #EDF2F4;background-size:cover;background:linear-gradient(to bottom, rgba(40,41,60,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;}
+#nav ul{list-style:none; margin:0; padding:0; overflow:hidden;text-align:center; width:100%;}
+#nav li{/*padding:3px 8px; margin:0 10px 0 0; list-style-type:none;*/ display:inline;}
+#nav li a{display:inline-block; color:#EDF2F4; text-align:center; text-decoration:none;padding:14px 16px;text-shadow: 1px 1px 0px rgba(43, 45, 66, 1);} 
+#nav li a:hover:not(.active){background-color:#646675;text-decoration:underline;}
 
 #contact_map {
     height:400px;
