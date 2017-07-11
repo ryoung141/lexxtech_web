@@ -206,6 +206,9 @@ a:hover {text-decoration: underline;}
 #nav li a{display:inline-block; color:#EDF2F4; text-align:center; text-decoration:none;padding:14px 16px;text-shadow: 1px 1px 0px rgba(43, 45, 66, 1);} 
 #nav li a:hover:not(.active){background-color:#646675;text-decoration:underline;}
 
+/*SERVICE_LANDING*/
+#service_description{font-family:Tahoma, Verdana, sans-serif;}
+
 #contact_map {
     height:400px;
     width:100%;
