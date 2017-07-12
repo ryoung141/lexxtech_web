@@ -191,7 +191,7 @@ body {
 }
 
 /*logo*/
-#logo {background-color:#EDF2f4; padding:15px; border:5px solid #000; height:auto;width:auto;max-width:100%;margin:auto}
+#logo {background-color:#EDF2f4; padding:15px; border:5px solid #000; height:auto;width:auto;max-width:100%;margin:auto;display:block;}
 #logo_top {background-image:url("http://www.donsgarageocala.com/wp-content/uploads/dons-garage-in-ocala-slider-6.jpg"); background-size:cover; padding:40px; height:auto; width:auto;}
 
 /* ANCHORS */
@@ -207,8 +207,17 @@ a:hover {text-decoration: underline;}
 #nav li a:hover:not(.active){background-color:#646675;text-decoration:underline;}
 
 /*SERVICE_LANDING*/
+#service_landing{padding:10px;float:left;}
 #service_description{font-family:Tahoma, Verdana, sans-serif;}
+.left_column{float:left;width:25%;}
+.right_column{float:right;width:70%;}
 
+#about_us_landing{padding:10px;float:left;}
+#hours_landing{padding:10px;float:left;text-align:center;}
+#hours{text-align:left;}
+#contact_landing{padding:10px;float:left;}
+#footer_info{padding:10px;clear:both;}
+#map_wrap{clear:both;}
 #contact_map {
     height:400px;
     width:100%;
