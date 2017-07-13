@@ -1,14 +1,4 @@
-/*body {
-    background:
-    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-    background-color: #131313;
-    background-size: 20px 20px;
-}*/
+
 body {
     background-image:	
     -webkit-linear-gradient(45deg,
@@ -191,34 +181,40 @@ body {
 }
 
 /*logo*/
-#logo {background-color:#EDF2f4; padding:15px; border:5px solid #000; height:auto;width:auto;max-width:100%;margin:auto;display:block;}
-#logo_top {background-image:url("http://www.donsgarageocala.com/wp-content/uploads/dons-garage-in-ocala-slider-6.jpg"); background-size:cover; padding:40px; height:auto; width:auto;}
+#logo {background-color:#EDF2f4; padding:15px; border:5px solid #000; height:auto;width:auto;max-width:150%;margin:auto;display:block;}
+#logo_top {background-image:url("http://www.donsgarageocala.com/wp-content/uploads/dons-garage-in-ocala-slider-6.jpg"); background-size:cover; padding:80px; height:auto; width:auto;}
+
 
 /* ANCHORS */
-a, a:visited {text-decoration: none; }
+a, a:visited {text-decoration: none;color:#EDF2F4; }
 a:hover {text-decoration: underline;}
 
 /* NAVBAR */
-#navWrap{height:47px;}
+#navWrap{width:100%;height:42px;}
 #nav{padding:0;border-top:2px solid #EDF2F4;background-size:cover;background:linear-gradient(to bottom, rgba(40,41,60,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;}
-#nav ul{list-style:none; margin:0; padding:0; overflow:hidden;text-align:center; width:100%;}
+#nav ul{list-style:none; margin:0; padding:0;text-align:center; width:100%;}
 #nav li{/*padding:3px 8px; margin:0 10px 0 0; list-style-type:none;*/ display:inline;}
-#nav li a{display:inline-block; color:#EDF2F4; text-align:center; text-decoration:none;padding:14px 16px;text-shadow: 1px 1px 0px rgba(43, 45, 66, 1);} 
+#nav li a{display:inline-block; color:#EDF2F4; text-align:center; text-decoration:none;padding:11px 16px;text-shadow: 1px 1px 0px rgba(43, 45, 66, 1);} 
 #nav li a:hover:not(.active){background-color:#646675;text-decoration:underline;}
 
 /*SERVICE_LANDING*/
-#service_landing{padding:10px;float:left;}
-#service_description{font-family:Tahoma, Verdana, sans-serif;}
-.left_column{float:left;width:25%;}
-.right_column{float:right;width:70%;}
+#service_landing{padding:10px;background-color:rgba(213, 217, 225, 0.5);background-size:100% 100%;width:100%;}
+#service{clear:both;padding:5px;border-bottom:3px solid #000;}
+/*#service_any{clear:both;padding:5px;background-color:rgba(213, 217, 225, 0.5);}*/
+#service_description{;font-family:Tahoma, Verdana, sans-serif;}
+.left_column{text-align:left;width:35%;float:left;}
+.right_column{float:right;width:65%;}
 
 #about_us_landing{padding:10px;float:left;}
-#hours_landing{padding:10px;float:left;text-align:center;}
-#hours{text-align:left;}
-#contact_landing{padding:10px;float:left;}
-#footer_info{padding:10px;clear:both;}
-#map_wrap{clear:both;}
-#contact_map {
-    height:400px;
-    width:100%;
-}
+
+#contact_landing{padding:10px;clear:both;text-align:center}
+#contact_info{list-style-type:none;float:left;width:45%;}
+#contact_info h3{margin-bottom:2em;}
+#hours{list-style-type:none;float:left;width:45%;}
+
+#map_wrap{clear:both;text-align:center}
+#contact_map {height:400px;width:100%;}
+
+#footer_info{clear:both;list-style-type:none;display:inline-block;background-color:#1C1D2A;width:100%;color:#EDF2F4;}
+#footer_logo {width:207px;height:60px;display:block;float:left;}
+

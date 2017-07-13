@@ -13,8 +13,8 @@ $(function(){
 		position:'fixed',
 		top:0,
 		left:nav.offset().left,
-		width:nav.width()
 	    });
+	    nav.width('100%');
 	    isFixed=true;
 	}
 	else if(!shouldBeFixed && isFixed){
