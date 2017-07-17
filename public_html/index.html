@@ -5,7 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Bootstrap 101 Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="Richard Young">
+	<link rel="icon" href="#">
+	<title>A.V. LexxTech</title>
 
 	<!-- Bootstrap -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
@@ -22,85 +25,260 @@
     </head>
 
 
-    <body>
-    	<!-- NAVBAR
-	 ============================================ -->
-	 <div class="navbar-wrapper">
-	     <div class="container">
-		 <nav class="navbar navbar-inverse navbar-static-top">
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!-- NAVBAR
+     ============================================ -->
+     <div class="navbar-wrapper">
+	 <div class="container">
+	     <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="100" >
+		 <div class="container">
+		     <div class="navbar-header">
+			 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			     <span class="sr-only">Toggle navigation</span>
+			     <span class="icon-bar"></span>
+			     <span class="icon-bar"></span>
+			     <span class="icon-bar"></span>
+			 </button>
+			 <a class="navbar-brand" href="#">Insert Logo</a>
+		     </div>
+		     <div id="navbar" class="navbar-collapse collapse">
+			 <ul class="nav navbar-nav">
+			     <li class="active"><a href="#myCarousel">Home</a></li>
+			     <li><a href="#about">About</a></li>
+			     <li><a href="#services">Services</a></li>
+			     <li><a href="#contact">Contact</a></li>
+			 </ul>
+		     </div>
+		 </div>
+	     </nav>
+
+	 </div>
+     </div>
+
+     <!-- CAROUSEL
+	 =================================================== -->
+	 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	     <ol class="carousel-indicators">
+		 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	     </ol>
+	     <div class="carousel-inner" role="listbox">
+		 <div class="item active">
+		     <img class="first-slide" src="img/oil.jpeg" alt="First slide">
 		     <div class="container">
-			 <div class="navbar-header">
-			     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				 <span class="sr-only">Toggle navigation</span>
-				 <span class="icon-bar"></span>
-				 <span class="icon-bar"></span>
-				 <span class="icon-bar"></span>
-			     </button>
-			     <a class="navbar-brand" href="#">Insert Logo</a>
-			 </div>
-			 <div id="navbar" class="navbar-collapse collapse">
-			     <ul class="nav navbar-nav">
-				 <li class="active"><a href="#">Home</a></li>
-				 <li><a href="#about">About</a></li>
-				 <li><a href="#services">Services</a></li>
-				 <li><a href="#contact">Contact</a></li>
-			     </ul>
+			 <div class="carousel-caption">
+			     <h1>Regular maintainence is important.</h1>
+			     <p>Without it, your car isn't running at peak performance. Let us make your car healthy again.</p>
+			     <p><a class="btn btn-lg btn-primary" href="#services" role="button">Check out our Services</a></p>
 			 </div>
 		     </div>
-		 </nav>
-		 
-	     </div>
-	 </div>
+		 </div>
+		 <div class="item">
+		     <img class="second-slide" src="img/engine.jpeg" alt="Second slide">
+		     <div class="container">
+			 <div class="carousel-caption">
+			     <h1>The parts make the car.</h1>
+			     <p>We only use factory or OEM parts* when servicing your vehicle. The quality of the parts is important in ensuring that your car lives a long, happy life.</p> 
+			 </div>
+		     </div>
+		 </div>
+		 <div class="item">
+		     <img class="third-slide" src="img/beach.jpeg" alt="Third slide">
+		     <div class="container">
+			 <div class="carousel-caption">
+			     <h1>Is your car summer-ready?</h1>
+			     </p>In this heat, I sure hope so! Schedule an appointment today and we'll make sure that you'll be driving with cold air conditioning in no time.</p>
+			     <p><a class="btn btn-lg btn-primary" href="#services" role="button">Learn more</a></p>
+			 </div>
+		     </div>
+		 </div>
+		 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		     <span class="sr-only">Previous</span>
+		 </a>
+		 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		     <span class="sr-only">Next</span>
+		 </a>
+	     </div> <!--- end of carousel -->
 
-	 <!-- CAROUSEL
-	=================================================== -->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	    <ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	    </ol>
-	    <div class="carousel-inner" role="listbox">
-		<div class="item active">
-		    <img class="first-slide" src="img/carousel_maint.jpg" alt="First slide">
-		    <div class="container">
-			<div class="carousel-caption">
-			    <h1>Regular maintainence is important.</h1>
-			    <p>Without it, your car isn't running at peak performance. Let us make your car healthy again.</p>
-			    <p><a class="btn btn-lg btn-primary" href="#services" role="button">Check out our Services</a></p>
-			</div>
-		    </div>
-		</div>
-		<div class="item">
-		    <img class="second-slide" src="img/carousel_parts.jpg" alt="Second slide">
-		    <div class="container">
-			<div class="carousel-caption">
-			    <h1>The parts make the car.</h1>
-			    <p>We only use factory or OEM parts* when servicing your vehicle. The quality of the parts is important in ensuring that your car lives a long, happy life.</p> 
-			</div>
-		    </div>
-		</div>
-		<div class="item">
-		    <img class="third-slide" src="img/carousel_summer.jpg" alt="Third slide">
-		    <div class="container">
-			<div class="carousel-caption">
-			    <h1>Is your car summer-ready?</h1>
-			    </p>In this heat, I sure hope so! Schedule an appointment today and we'll make sure that you'll be driving with cold air conditioning in no time.</p>
-			    <p><a class="btn btn-lg btn-primary" href="#services" role="button">Learn more</a></p>
-			</div>
-		    </div>
-		</div>
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		</a>
-	    </div> <!--- end of carousel -->
-		
-		
+	     <!-- Marketing messaging and featureettes
+	  ========================================================= -->
+	  <!-- Wrap rest of page in another container -->
+
+	  <div class="container marketing">
+	      <!-- Three columns of text below the carousel-->
+	      <div class="row">
+		  <div class="col-lg-4">
+		      <img class="img-circle" src="https://via.placeholder.com/140x140" width="140" height="140">
+		      <h2>Heading</h2>
+		      <p>FILLER TEXT HERE FDJSAKLFDJSAKLF;DSJKAFLDSJAFKLD;SJAFKSDL;</p>
+		  </div>
+		  <div class="col-lg-4">
+		      <img class="img-circle" src="https://via.placeholder.com/140x140" width="140" height="140">
+		      <h2>Heading</h2>
+		      <p>FILLER TEXT HERE FDJSAKLFDJSAKLF;DSJKAFLDSJAFKLD;SJAFKSDL;</p>
+		  </div>
+		  <div class="col-lg-4">
+		      <img class="img-circle" src="https://via.placeholder.com/140x140" width="140" height="140">
+		      <h2>Heading</h2>
+		      <p>FILLER TEXT HERE FDJSAKLFDJSAKLF;DSJKAFLDSJAFKLD;SJAFKSDL;</p>
+		  </div>	
+		  <!---/.row -->
+
+		  <!-- Featurettes -->
+
+		  <hr class="featurette-divider">
+
+		  <div id="about" class="row featurette">
+		      <div class="col-md-7">
+			  <h2 class="featurette-heading">Lexus and Toyota.<br> <span class="text-muted"> It's what we do.</span></h2>
+			  <p class="lead">With over 18 years of Lexus and Toyota dealership experience, we're committed to providing you a dealership alternative. Although we love Lexus and Toyota, we're just as excited to service <em>all</em> makes and models. Give us a call and we can schedule you an appointment that suits your schedule.</p>
+		      </div>
+		      <div class="col-md-5">
+			  <img class="featurette-image img-responsive center-block" src="https://via.placeholder.com/500x500">
+		      </div>
+		  </div>
+
+		  <hr class="featurette-divider">
+
+		  <div id="services" class="row featurette">
+		      <div class="col-md-7 col-md-push-5">
+			  <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+			  <p class="lead">Filler..... fdsjakfldsa fjdskal;few jfkdlw jfdkslw fdjskivcjidos jdskleji jeiwojdksl e jfkdslewio f</p>
+		      </div>
+		      <div class="col-md-5 col-md-pull-7">
+			  <img class="featurette-image img-responsive center-block" src="https://via.placeholder.com/500x500">
+		      </div>
+		  </div>
+
+		  <hr class="featurette-divider">
+
+		  <div id="contact" class="row featurette">
+		      <div class="col-md-7">
+			  <h2 class="featurette-heading">You now have a choice.<br> <span class="text-muted"> You don't have to wait at the dealership anymore.</span></h2>
+			  <p class="lead">We offer free pick-up and drop off services to the surrounding are so you don't have to wait around, just let us know. You can find us at <a href="https://www.google.com/maps/place/AV+Lexus+%26+Toyota+Services/@34.6544645,-118.1481443,17z/data=!4m13!1m7!3m6!1s0x80c25a5accc65899:0xa3e32a3b8956a806!2s824+W+Ave+L6,+Lancaster,+CA+93534!3b1!8m2!3d34.6544645!4d-118.1459556!3m4!1s0x80c25a5761304d6f:0x3e3e6c0d129d376c!8m2!3d34.6544641!4d-118.1463083">824 West Avenue L-6</a> on the right for your convenience. Stop in and say hi! Give us a call, text or email and schedule your appointment today.<br>(<em>Yes we accept text messages!</em>)</p>
+			  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#contact_modal">
+			      <span class="glyphicon glyphicon-bullhorn"></span>Contact Us
+			  </button>
+		      </div>
+		      
+		  <div class="col-md-5">
+		      <div id="map2" class="center-block large-map"></div>
+		  </div>
+		  <!-- MODAL -->
+		      <div id="contact_modal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			      <!-- content -->
+			      <div class="modal-content">
+				  <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal">&times;</button>
+				      <h2 class="modal-title">Contact Us</h2>
+				  </div>
+				  <div class="modal-body">
+				      <div class="container">
+					  <div class="row">
+					      <div class="col-md-3">
+						  <h4 class="modal-title">Location</h4>
+						  <ul class="list-unstyled">
+						      <li>A.V. LexxTech</li>
+						      <li>824 W. Avenue L-6</li>
+						      <li>Lancaster, CA</li>
+						      <li>93534</li>
+						  </ul>
+					      </div>
+					      <div class="col-md-3">
+						  <h4 class="modal-title">Contact</h4>
+						  <ul class="list-unstyled">
+						      <li><h5>Call, text, or email us at:</h5></li>
+						      <ul class="list-unstyled">
+							  <li>661-202-2429</li>
+							  <li>AVLexxTech@gmail.com</li>
+						      </ul>
+						  </ul>
+					      </div>
+					  </div>
+					  <div class="row">
+					      <div class="col-md-6 text-center">
+						  <h3>Schedule an appointment with us today!</h3>
+					      </div>
+					  </div>
+					  <hr class="modal-divider">
+					  <div class="row">
+					      <div class="col-md-3">
+						  <h4 class="modal-title">Hours</h4>
+						  <table class="table table-hover table-responsive table-flow">
+						      <thead>
+							  <tr>
+							      <th>Day</th>
+							      <th>Open</th>
+							      <th>Close</th>
+							  </tr>
+						      </thead>
+						      <tbody>
+							  <tr>
+							      <td>Monday</td>
+							      <td>8 AM</td>
+							      <td>5 PM</td>
+							  </tr>
+							  <tr>
+							      <td>Tuesday</td>
+							      <td>8 AM</td>
+							      <td>5 PM</td>
+							  </tr>
+							  <tr>
+							      <td>Wednesday</td>
+							      <td>8 AM</td>
+							      <td>5 PM</td>
+							  </tr>
+							  <tr>
+							      <td>Thursday</td>
+							      <td>8 AM</td>
+							      <td>5 PM</td>
+							  </tr>
+							  <tr>
+							      <td>Friday</td>
+							      <td>8 AM</td>
+							      <td>5 PM</td>
+							  </tr>
+							  <tr>
+							      <td>Weekends</td>
+							      <td>Closed</td>
+							      <td>------</td>
+							  </tr>
+						      </tbody>
+						  </table>
+					      </div>
+					      <div class="col-md-4">
+						  <div id="map1" class="center-block small-map"></div>
+					      </div>
+					  </div>
+				      </div>
+				  </div>
+			      </div>
+			      <div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			  </div>
+		      </div>
+		  </div>
+
+	      </div>
+	  </div>
+
+	  <hr class="featurette-divider">
+
+	  <!-- END OF FEATURETTES -->
+
+	  <!-- FOOTER -->
+	  <footer>
+	      <p class="pull-right"><a href="#">Back to top</a></p>
+	      <p>&copy; 2017 A.V. LexxTech &middot; <a href="#">Contact Us</a> &middot; <a href="https://logomakr.com">Logos created by Logomakr</a></p>
+	  </footer>
+
+	 </div> <!-- end of container -->
 
 
 
@@ -108,9 +286,17 @@
 
 
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <!-- Include all compiled plugins (below), or include individual files as needed -->
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	 <!-- custom js -->
+	 <script src="js/script.js" type="text/javascript"></script>
+	 <script async defer
+			     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDRo2JnoTMYy94wCqzm-o3GpKqySEeZyM&callback=initMap" type="text/javascript"></script>
+
     </body>
 </html>

@@ -20,6 +20,8 @@ body {
   z-index: 20;
 }
 
+.affix{top:0;width:100%;right:0;left:0;z-index:20;}
+
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
   padding-right: 0;
@@ -58,7 +60,8 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  min-height:500px;
+  height: auto;
 }
 
 
@@ -66,7 +69,10 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+
 .marketing .col-lg-4 {
+    padding-top:60px;
+    padding-bottom:60px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -92,6 +98,14 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
+
+/* Contact section css */
+.glyphicon-bullhorn{margin-right: 8px;}
+.large-map{height:500px;width:500px;margin-top:15px;}
+.small-map{height:250px;width:250px;margin:10px;}
+.modal-divider{margin:30px 0 auto ;margin-bottom:30px;max-width:48%;width:auto}
+.table-flow{width:auto !important;}
+
 
 
 /* RESPONSIVE CSS
