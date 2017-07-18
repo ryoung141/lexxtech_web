@@ -3,12 +3,11 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
-  font: Verdana, Geneva, sans-serif;
+  padding-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
-.text-muted{color:rgba(201,7,0,0.85);}/*#949494*/
-
-
+.footer-logo{padding-left:20px;margin-left:20px;height:80px; width:auto;}
+footer .pull-right{padding-right:20px;margin-left:20px;}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -19,6 +18,8 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
+  font-family:'Rubik', sans-serif;
+  font-weight:500;
 }
 
 
@@ -36,7 +37,8 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
-
+.navbar-brand{height:40px;width:auto;}
+.navbar-brand img {height:30px; width:auto;}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -50,7 +52,12 @@ body {
   z-index: 10;
   color:#F0F0F0;
   background-color:rgba(32,32,32,0.55);
+  font-family:'Open Sans', sans-serif;
+  font-size:larger;
 }
+
+.carousel-caption h1{font-family:'Oswald', sans-serif;font-weight:300;letter-spacing:1px;}
+.carousel-caption p{font-size:18px;}
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
@@ -72,6 +79,7 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 
+.marketing{font-family:'Open Sans', sans-serif;}
 
 .img-circle{border: 1px solid #5a5a5a;}
 
@@ -80,6 +88,7 @@ body {
 .review-btn{margin-bottom:30px;}
 
 .glyphicon-star-empty, .glyphicon-star{color:#c90700;}
+
 
 .marketing .col-lg-4 {
     padding-top:20px;
@@ -92,6 +101,7 @@ body {
 .marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
+  font-size:15px;
 }
 
 
@@ -104,12 +114,16 @@ body {
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
+  font-weight: 500;
+  font-family:'Oswald', sans-serif;
+  font-size:275%;
   line-height: 1;
   letter-spacing: -1px;
 }
 
 .featurette .btn{padding:10px;margin:15px;margin-bottom:30px;margin-left:0px;}
+.text-muted{font-family:'Rubik', sans-serif !important;font-weight:300;letter-spacing:-2px;font-size:smaller;color:rgba(201,7,0,0.85);}/*#949494
+
 
 /* About section css */
 
@@ -117,10 +131,16 @@ body {
 .glyphicon-list-alt{margin-right: 8px;}
 
 /* Contact section css */
+.modal-header{background-color:#202020;color:#F0F0F0;}
+.modal-header .close{background-color:#FFFFFF;padding:0 5px 0 5px;}
+.modal-body{font-family:'Open Sans', sans-serif;background-color:#e0e0e0;}
+.modal-body h3{padding-bottom:15px;}
+.modal-title{font-family:'Oswald', sans-serif; font-weight:300; letter-spacing:1px;}
+.modal-footer{background-color:#e0e0e0;color:#202020;}
 .glyphicon-bullhorn{margin-right: 8px;}
 .large-map{height:500px;width:500px;margin-top:15px;}
 .small-map{height:250px;width:250px;margin:10px;}
-.modal-divider{margin:30px 0 auto ;margin-bottom:30px;max-width:48%;width:auto}
+.modal-divider{margin:30px 0 auto ;margin-bottom:30px;max-width:48%;width:auto;}
 .table-flow{width:auto !important;}
 
 
@@ -159,22 +179,3 @@ body {
   }
 }
 
-@media only screen and (max-width:320px){
-    .carousel {
-	height: 300px;
-    }
-
-    .carousel .item {
-	height: 300px;
-    }
-    .carousel-inner > .item > img {
-	min-width: 100%;
-	min-height:300px;
-	height: auto;
-    }
-
-    .featurette-heading {
-	font-size: 50px;
-    }
-
-}

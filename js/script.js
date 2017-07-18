@@ -1,34 +1,4 @@
 //Source:http://www.dwuser.com/education/content/creating-a-floating-navigation-menu/
-//Floating nav bar js
-/*$(function(){
-    var nav=$('.navbar-wrapper');
-    var navHomeY = nav.offset().top;
-    var isFixed=false;
-    var $w = $(window);
-    $w.scroll(function(){
-	var scrollTop=$w.scrollTop();
-	var shouldBeFixed=scrollTop>navHomeY;
-	if(shouldBeFixed && !isFixed){
-	    nav.css({
-		position:'fixed',
-		top:0,
-		left:nav.offset().left,
-	    });
-	    nav.width('100%');
-	    isFixed=true;
-	}
-	else if(!shouldBeFixed && isFixed){
-	    nav.css({
-		position:'static',
-		top:0,
-		left:0,
-		right:0,
-	    });
-	    isFixed=false;
-	}
-    });
-});
-*/
 
 //smooth-scroll
 $(document).ready(function(){
@@ -74,10 +44,9 @@ function initMap(){
 	map: map,
 	title: "A.V. LexxTech"
     });
-
 }
 
-//google map re-size on modal
-    $("#contact_modal").on("shown.bs.modal", function() {
-	google.maps.event.trigger(map, "resize");
-    });
+$('#contact_modal').one('click', function(){
+    initMap();
+});
+
