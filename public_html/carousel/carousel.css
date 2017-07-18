@@ -70,9 +70,10 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 
+.img-circle{border: 1px solid #5a5a5a;}
+
 .marketing .col-lg-4 {
     padding-top:60px;
-    padding-bottom:60px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -98,6 +99,11 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
+
+/* About section css */
+
+/* Services section css */
+.glyphicon-list-alt{margin-right: 8px;}
 
 /* Contact section css */
 .glyphicon-bullhorn{margin-right: 8px;}
