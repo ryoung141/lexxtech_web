@@ -8,6 +8,7 @@ body {
 }
 .footer-logo{padding-left:20px;margin-left:20px;height:80px; width:auto;}
 footer .pull-right{padding-right:20px;margin-left:20px;}
+button:active{background-color:#6B0300 !important;}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 

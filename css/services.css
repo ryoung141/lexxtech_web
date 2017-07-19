@@ -1,0 +1,123 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+.footer-logo{padding-left:20px;margin-left:20px;height:80px; width:auto;}
+footer .pull-right{padding-right:20px;margin-left:20px;}
+footer .exception{font-size:0.75em;font-weight:300;} 
+.text-muted{font-family:'Rubik', sans-serif !important;font-weight:300;letter-spacing:-2px;font-size:smaller;color:rgba(201,7,0,0.85);}
+.services-divider{margin:20px;}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  font-family:'Rubik', sans-serif;
+  font-weight:500;
+}
+
+
+.affix{top:0;width:100%;right:0;left:0;z-index:20;}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-brand{height:40px;width:auto;}
+.navbar-brand img {height:30px; width:auto;}
+
+/* Jumbotron CSS */
+.jumbotron{
+    margin-bottom:0px;
+    margin-top:60px;
+    background-image:url(../img/services_jumbo.jpg);
+    background-position: 0% 25%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: #F0F0F0;
+    text-shadow:black 0.3em 0.3em 0.3em;
+}
+.jumbotron-caption h1{font-family:'Oswald', sans-serif;letter-spacing:1px;font-weight:300;}
+.jumbotron-caption p{letter-spacing:-1px;}
+
+/* panel CSS */
+#master-button{margin:0 20px 10px 0;color:#F0F0F0;}
+button:active{background-color:#6B0300 !important;}
+.panel-default > .panel-heading{font-family:'Rubik', sans-serif;letter-spacing:1px;font-weight:400;color:#F0F0F0;text-shadow:black 1px 1px 1px;background-image:none;background-color:#202020;}
+.panel-body h5{font-size:1.1em;}
+.panel-body ul li{line-height:1.3;}
+.panel-body .glyphicon-wrench{margin-right:5px;}
+
+
+/* Contact section css */
+.modal-header{background-color:#202020;color:#F0F0F0;}
+.modal-header .close{background-color:#FFFFFF;padding:0 5px 0 5px;}
+.modal-body{font-family:'Open Sans', sans-serif;background-color:#e0e0e0;}
+.modal-body h3{padding-bottom:15px;}
+.modal-title{font-family:'Oswald', sans-serif; font-weight:300; letter-spacing:1px;}
+.modal-footer{background-color:#e0e0e0;color:#202020;}
+.glyphicon-bullhorn{margin-right: 8px;}
+.large-map{height:500px;width:500px;margin-top:15px;}
+.small-map{height:250px;width:250px;margin:10px;}
+.modal-divider{margin:30px 0 auto ;margin-bottom:30px;max-width:48%;width:auto;}
+.table-flow{width:auto !important;}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/*for small screens*/
+@media (max-width:680px){
+    .footer-logo{height:100px;}
+
+}
