@@ -49,4 +49,3 @@ function initMap(){
 $('#contact_modal').one('click', function(){
     initMap();
 });
-
