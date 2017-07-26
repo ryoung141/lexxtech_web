@@ -7,7 +7,6 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description" content="">
 	<meta name="author" content="Richard Young">
-	<link rel="icon" href="#">
 	<title>A.V. LexxTech</title>
 
 	<!-- Bootstrap -->
@@ -25,7 +24,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,500|Rubik:300,300i,400" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="../css/lavish-bootstrap.css">
-	<link rel="stylesheet" href="../css/services.css">
+	<link rel="stylesheet" href="../css/calendar.css">
 	<!-- favicon -->
 	<link rel="icon" href="../img/favicon.ico">
     </head>
@@ -46,12 +45,14 @@
 			     <span class="icon-bar"></span>
 			 </button>
 			 <a class="navbar-brand" href="/"><img class="nav-logo" src="../img/logo_mini.png"></a>
+
 		     </div>
 		     <div id="navbar" class="navbar-collapse collapse">
 			 <ul class="nav navbar-nav">
 			     <li><a href="/">Home</a></li>
-			     <li><a href="#">About</a></li>
-			     <li class="active"><a href="#seasonal_description">Services</a></li>
+			     <li><a href="/#about">About</a></li>
+			     <li><a href="/public_html/services.html">Services</a></li>
+			     <li class="active"><a href="#">Schedule</a></li>
 			     <li><a href="#contact_modal" data-toggle="modal" data-target="#contact_modal">Contact</a></li>
 			 </ul>
 		     </div>
@@ -65,9 +66,8 @@
      <div class="container">
 	 <div class="jumbotron">
 	     <div class="jumbotron-caption">
-		 <h1>Here to Serve.</h1><br>
-		 <p> We pride ourselves on giving you the respect you deserve, with prices that won't break your wallet. That's why we give an honest description of what we do with each service.</p>
-		 <p>Check it out.</p>
+		 <h1>Scheduling Has Never Been Easier.</h1><br>
+		 <p>We want to make scheduling an appointment a breeze for our clients, so we've partnered with Google Suite to provide a simple appointment interface.<br><br>All you need is a Google account and you can get started right now!</p>
 	     </div>
 	 </div>
      </div>
@@ -75,138 +75,42 @@
 
      <hr class="services-divider">
 
-     <!--Beginning of panels -->
+     <!--Beginning of Calendar -->
      <div class="container">
-	 <div class="row">
-	     <button id="master-button" class="btn btn-default btn-primary pull-right">
-		 Expand All
-	     </button>
+	 <div class="col-md-12 center-block">
+	     <div class="panel panel-default">
+		 <div class="panel-heading">
+		     <h5>Scheduling Instructions</h3>
+
+		 </div>
+		 <div class="panel-body">
+		     <ol>
+
+			 <li>Sign in to, or create a <a href="https://accounts.google.com/SignUp?hl=en">Google account</a></li>
+			 <ul>
+			     <li>If you had to go sign in, please refresh the page when you come back</li>
+			 </ul>
+			 <li>Select appointment slot you want</li>
+			 <li>Fill in name for the "What" field</li>
+			 <li>Add the make/model/year of your car to the "Description" field</li>
+			 <li>Leave a call-back number for follow-up questions</li>
+
+			 <li>Select "Save"</li>
+			 <li>The appointment will be automatically added to our database, and saved to your own Google Calendar</li>
+		     </ol>
+		 </div>
+	     </div>
 	 </div>
-	 <div class="panel-group" id="accordion">
-	     <div class="panel panel-default">
-		 <div class="panel-heading"> 
-		     <h4 class="panel-title">
-			 <a data-toggle="collapse" href="#seasonal_description">
-			     Seasonal
-			 </a>
-		     </h4>
-		 </div>
-		 <div id="seasonal_description" class="panel-collapse collapse">
-		     <div class="panel-body">
-			 <div class="well well-sm">
-			     <h5>Our seasonal package will ensure you're driving comfortably this summer!</h5>
-			 </div>
-			 <ul class="service-description list-unstyled">
-			     <li><span class="glyphicon glyphicon-wrench"></span>Cooling system drain and refill</li> 
-			     <li><span class="glyphicon glyphicon-wrench"></span>Cooling system fluid exchange</li> 
-			     <li><span class="glyphicon glyphicon-wrench"></span>Battery service</li> 
-			     <li><span class="glyphicon glyphicon-wrench"></span>Wiper insert replacement</li> 
-			 </ul>
-		     </div>
-		     <div class="panel-footer">
-		     </div>
-		 </div>
-	     </div>
-	     <div class="panel panel-default">
-		 <div class="panel-heading"> 
-		     <h4 class="panel-title">
-			 <a data-toggle="collapse" href="#minor_description">
-			     Minor
-			 </a>
-		     </h4>
-		 </div>
-		 <div id="minor_description" class="panel-collapse collapse">
-		     <div class="panel-body">
-			 <div class="well well-sm">
-			     <h5>Dealership recommended every 5,000 miles</h5>
-			 </div>
-			 <ul class="service-description list-unstyled">
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace engine oil and oil filter</span></li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace engine oil drain plug gasket</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Rotate and balance all tires, set tire pressure</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Clean and adjust rear-brakes and parking brake</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Check and top-off fluids*</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Perform 27-point visual inspection</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Lube chassis</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Reset low tire pressure sensor</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Reset "Maintainence Required" light</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Inspect and make adjustments per model specific factory guidelines</li>
-			 </ul>
-		     </div>
-		     <div class="panel-footer">
-		     </div>
-		 </div>
-	     </div>
-	     <div class="panel panel-default">
-		 <div class="panel-heading"> 
-		     <h4 class="panel-title">
-			 <a data-toggle="collapse" href="#intermediate_description">
-			     Intermediate
-			 </a>
-		     </h4>
-		 </div>
-		 <div id="intermediate_description" class="panel-collapse collapse">
-		     <div class="panel-body">
-			 <div class="well well-sm">
-			     <h5>Dealership recommended every 15,000 miles</h5>
-			 </div>
-			 <ul class="service-description list-unstyled">
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace engine oil and oil filter</span></li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace engine oil drain plug gasket</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Rotate and balance all tires, set tire pressure</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Service and test battery</li> 
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace engine air filter<li> 
-				     <li><span class="glyphicon glyphicon-wrench"></span>Clean and adjust rear-brakes and parking brake</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Check and top-off fluids*</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Perform 27-point visual inspection</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Lube chassis</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Reset low tire pressure sensor</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Reset "Maintainence Required" light</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Inspect and make adjustments per model specific factory guidelines</li>
-			 </ul>
-		     </div>
-		     <div class="panel-footer">
-		     </div>
-		 </div>
-	     </div>
-	     <div class="panel panel-default">
-		 <div class="panel-heading"> 
-		     <h4 class="panel-title">
-			 <a data-toggle="collapse" href="#major_description">
-			     Major
-			 </a>
-		     </h4>
-		 </div>
-		 <div id="major_description" class="panel-collapse collapse">
-		     <div class="panel-body">
-			 <div class="well well-sm">
-			     <h5>Dealership recommended every 30,000 miles</h5>
-			 </div>
-			 <ul class="service-description list-unstyled">
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace engine oil and oil filter</span></li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace engine oil drain plug gasket</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Rotate and balance all tires, set tire pressure</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Service and test battery</li> 
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace engine air filter</li> 
-			     <li><span class="glyphicon glyphicon-wrench"></span>Clean and adjust rear-brakes and parking brake</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace cabin air filter (if applicable)</li>
-			     <li><span class="glyphicon glyphicon-wrench"></span>Replace differential oil (if applicable)<li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Check and top-off fluids*</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Perform 27-point visual inspection</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Lube chassis</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Reset low tire pressure sensor</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Reset "Maintainence Required" light</li>
-				     <li><span class="glyphicon glyphicon-wrench"></span>Inspect and make adjustments per model specific factory guidelines</li>
-			 </ul>
-		     </div>
-		     <div class="panel-footer">
-		     </div>
+	 <div class="row">
+	     <div class="col-md-12">
+		 <div class="text-center">
+		     <iframe id="appointments" src="https://calendar.google.com/calendar/selfsched?sstoken=UUp2bVZmMFNjTGl3fGRlZmF1bHR8MTYwMWJiZTU5YTZjMDQ4NWQ5ODEyNTI1ZjIyNjI4ZWY" frameborder="0" scrolling="no" width="1200" height="750"></iframe>
 		 </div>
 	     </div>
 	 </div>
      </div>
-     <!--End of panels -->
 
+     <!--End of Calendar -->
      <!-- MODAL -->
      <div id="contact_modal" class="modal fade" role="dialog">
 	 <div class="modal-dialog">
@@ -314,11 +218,6 @@
      <footer>
 	 <div class="row">
 	     <p class="center-block, text-center"><span><img class="footer-logo" src="../img/logo_800x300_dark.png"></span><a href="#" data-toggle="modal" data-target="#contact_modal">Contact Us</a> &middot; <a href="https://logomakr.com">Logos created by Logomakr</a></p>
-	 </div>
-	 <div class="row text-center exception">
-	     <div class="col-md-12">
-		 <p>*With the exception of brake fluids</p>
-	     </div>
 	 </div>
      </footer>
 

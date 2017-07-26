@@ -139,6 +139,7 @@ button:active{background-color:#6B0300 !important;}
 .modal-title{font-family:'Oswald', sans-serif; font-weight:300; letter-spacing:1px;}
 .modal-footer{background-color:#e0e0e0;color:#202020;}
 .glyphicon-bullhorn{margin-right: 8px;}
+.glyphicon-bookmark{margin-right: 8px;}
 .large-map{height:500px;width:500px;margin-top:15px;}
 .small-map{height:250px;width:250px;margin:10px;}
 .modal-divider{margin:30px 0 auto ;margin-bottom:30px;max-width:48%;width:auto;}
